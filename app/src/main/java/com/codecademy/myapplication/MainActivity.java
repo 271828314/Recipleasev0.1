@@ -9,10 +9,14 @@ import android.widget.Button;
 
 public class MainActivity extends AppCompatActivity {
 
+    DBHandler dbh;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
+
+        dbh = new DBHandler(this);
 
         Button button = findViewById(R.id.loginButton); // Replace `buttonId` with your button's actual ID
         button.setOnClickListener(new View.OnClickListener() {
