@@ -11,8 +11,6 @@ public class DBHandler extends SQLiteOpenHelper {
 
     public static final String KEY_USER = "Username";
 
-    public static final String KEY_ID = "id";
-
     public DBHandler(Context context) {
         super(context, DB_NAME, null, DB_VERSION);
     }
