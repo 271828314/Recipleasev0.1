@@ -4,6 +4,112 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:outlineAmbientShadowColor="#00FFFFFF"
+    android:outlineSpotShadowColor="#00FFFFFF"
     tools:context=".Homepage">
+
+    <SearchView
+        android:id="@+id/searchView"
+        android:layout_width="330dp"
+        android:layout_height="50dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="52dp"
+        android:layout_marginEnd="65dp"
+        android:layout_marginBottom="530dp"
+        app:backgroundTint="#FDE5A3"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+    </SearchView>
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="227dp"
+        android:layout_height="71dp"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="183dp"
+        android:layout_marginBottom="460dp"
+        android:text="Get started..."
+        android:textColor="#FAA60E"
+        android:textSize="35dp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/bottomAppBar2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchView"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:font="@font/times"
+        android:text="Recommended for you"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="179dp" />
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        android:id="@+id/bottomAppBar2"
+        android:layout_width="409dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom"
+        android:layout_marginStart="1dp"
+        android:layout_marginTop="-30dp"
+        android:layout_marginEnd="1dp"
+        android:layout_marginBottom="52dp"
+        app:backgroundTint="#FAA60E"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageButton2"
+        app:layout_constraintVertical_bias="0.436" />
+
+    <ImageView
+        android:id="@+id/imageView5"
+        android:layout_width="463dp"
+        android:layout_height="89dp"
+        app:srcCompat="@drawable/c1c1c1"
+        tools:layout_editor_absoluteX="-26dp"
+        tools:layout_editor_absoluteY="-43dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton2"
+        android:layout_width="93dp"
+        android:layout_height="97dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        android:tint="#00FFFFFF"
+        app:srcCompat="@android:drawable/ic_popup_sync"
+        tools:layout_editor_absoluteX="159dp"
+        tools:layout_editor_absoluteY="641dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton4"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="@+id/bottomAppBar2"
+        app:layout_constraintHorizontal_bias="0.095"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@android:drawable/picture_frame"
+        tools:layout_editor_absoluteY="638dp" />
+
+    <ImageButton
+        android:id="@+id/imageButton5"
+        android:layout_width="105dp"
+        android:layout_height="114dp"
+        android:backgroundTint="#00FFFFFF"
+        android:scaleType="fitCenter"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.908"
+        app:layout_constraintStart_toStartOf="@+id/bottomAppBar2"
+        app:srcCompat="@android:drawable/picture_frame"
+        tools:layout_editor_absoluteY="638dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
